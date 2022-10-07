@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: deploy1
+  labels:
+    app: asif-application
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: asif-application
+  template:
+    metadata:
+      labels:
+        app: asif-application
+    spec:
+      containers:
+      - image: quay.io/rehman0288/production:v1 
+        name: asif-cont
+        ports:
+        - name: http
+          containerPort: 80
