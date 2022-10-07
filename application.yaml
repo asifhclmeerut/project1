@@ -7,9 +7,9 @@ spec:
   project: default
 
   source: 
-    repoURL: https://gitlab.com/orange69/project.git
+    repoURL: https://github.com/asifhclmeerut/project1.git 
     targetRevision: HEAD
-    path: dev
+    path: /
   destination:
     server: https://kubernetes.default.svc
     namespace: default
