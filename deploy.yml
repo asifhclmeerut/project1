@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: deploy1
+  name: deploy2
   labels:
     app: asif-application
 spec:
